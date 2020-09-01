@@ -1,11 +1,14 @@
 package animalkingdom;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main
 {
     public static void main(String[] args)
     {
-        System.out.println("testing complier");
-        System.out.println();
+        // System.out.println("testing complier");
+        // System.out.println();
 
         //creating some mammals
         Mammal panda = new Mammal("Panda", 1869);
@@ -27,6 +30,34 @@ public class Main
         Fish salmon = new Fish("Salmon", 1758);
         Fish catfish = new Fish("Catfish", 1817);
         Fish perch = new Fish("Perch", 1758);
+
+        //Creating and ArrayList of all of the animals
+        List<Animal> animalList = new ArrayList<>();
+
+        //Adding animals to the list
+        animalList.add(panda);
+        animalList.add(zebra);
+        animalList.add(koala);
+        animalList.add(sloth);
+        animalList.add(armadillo);
+        animalList.add(raccoon);
+        animalList.add(bigfoot);
+        animalList.add(pigeon);
+        animalList.add(peacock);
+        animalList.add(toucan);
+        animalList.add(parrot);
+        animalList.add(swan);
+        animalList.add(salmon);
+        animalList.add(catfish);
+        animalList.add(perch);
+
+        System.out.println(animalList);
+
+        //List all the animals in the descending order by year named
+
+        //List all the animals alphabetically
+        System.out.println("\n*** Sort List Alphabetically ***");
+
     }
 }
 
