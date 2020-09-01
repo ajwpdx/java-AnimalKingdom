@@ -5,15 +5,15 @@ abstract class Animal {
     protected static int maxId = 0;
     protected int id;
     protected String name;
-    protected int yearDiscovered;
+    protected int yearNamed;
 
    //default constructor
-   public Animal(String name, int yearDiscovered) 
+   public Animal(String name, int yearNamed) 
    {
     maxId++;
     id = maxId;
     this.name = name;
-    this.yearDiscovered = yearDiscovered;
+    this.yearNamed = yearNamed;
    }
 
    //Abstract Methods - children get to define implementation
@@ -25,6 +25,12 @@ abstract class Animal {
    String eatFood()
    {
     return "nom, nom, nom";
+   }
+
+   @Override
+   public String toString()
+   {
+       return id + " " + name + "(" + yearNamed + ")";
    }
 
 }

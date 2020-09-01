@@ -2,9 +2,9 @@ package animalkingdom;
 
 public class Fish extends Animal
 {
-    public Fish(String name, int yearDiscovered)
+    public Fish(String name, int yearNamed)
     {
-        super(name, yearDiscovered);
+        super(name, yearNamed);
     }
 
     @Override
