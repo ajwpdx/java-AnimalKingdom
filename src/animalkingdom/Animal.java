@@ -16,5 +16,15 @@ abstract class Animal {
     this.yearDiscovered = yearDiscovered;
    }
 
+   //Abstract Methods - children get to define implementation
+   abstract String move();
+   abstract String breathe();
+   abstract String reproduce();
+
+   //Global Methods
+   String eatFood()
+   {
+    return "nom, nom, nom";
+   }
 
 }
