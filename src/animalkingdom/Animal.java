@@ -27,10 +27,23 @@ abstract class Animal {
     return "nom, nom, nom";
    }
 
+   String getName()
+   {
+       return name;
+   }
+
+   int getYearNamed() {
+       return yearNamed;
+   }
+
+   String getBreathe() {
+       return breathe();
+   }
+
    @Override
    public String toString()
    {
-       return id + " " + name + "(" + yearNamed + ")";
+       return id + " - " + name + "(" + yearNamed + ")";
    }
 
 }
