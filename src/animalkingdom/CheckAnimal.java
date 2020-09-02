@@ -1,5 +1,5 @@
-// package animalkingdom;
+package animalkingdom;
 
-// public class CheckAnimal {
-//     boolean test(Animal v);
-// }
+public interface CheckAnimal {
+    boolean test(Animal v);
+}

@@ -36,14 +36,10 @@ abstract class Animal {
        return yearNamed;
    }
 
-   String getBreathe() {
-       return breathe();
-   }
-
    @Override
    public String toString()
    {
-       return id + " - " + name + "(" + yearNamed + ")";
+       return id + " - " + name + " (" + yearNamed + ")";
    }
 
 }
